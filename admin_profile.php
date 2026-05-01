@@ -110,7 +110,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['take_ticket'])) {
 
 <div class="container">
     <div class="admin-grid">
-        <!-- левая колонка -->
         <div>
             <h3 style="margin-bottom:16px;">Новые заявки</h3>
             <?php if (empty($newTickets)): ?>
@@ -129,8 +128,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['take_ticket'])) {
                 </div>
             <?php endif; ?>
         </div>
-
-        <!-- правая колонка -->
         <div>
             <div class="card tdm">
                 <h3 style="margin-bottom:16px;">Профиль администратора</h3>
@@ -384,7 +381,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['take_ticket'])) {
 </div>
 
 <script>
-// Автообновление
+// автообновление
 setTimeout(function() {
     const activeElement = document.activeElement
     const isTyping = activeElement && (
